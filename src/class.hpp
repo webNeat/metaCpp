@@ -13,12 +13,12 @@ private:
 	vector<Attribut> attributs_;
 	vector<Method> methods_;
 public:
-	Class(const string& name, const MetaClass& meta, const vector<Attribut>& attributs, const vector<Method>& methods);
+	Class(const string& name);
 	Class(Class&);
 	Class& operator=(const Class&);
 	~Class();
-	void addAttribut(Attribut& attr );
-	void addMethod(Method& m );
+	void addAttribut(Attribut& attr, bool isStatic = false );
+	void addMethod(Method& m , bool isStatic = false );
 	bool hasAttribute(const string& name );
 	bool getAttribute(const string& name );
 	bool hasMethodWithName(const string& name );

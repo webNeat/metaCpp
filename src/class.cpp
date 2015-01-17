@@ -12,10 +12,10 @@ Class& Class::operator=(const Class& i){
 Class::~Class(){
 
 }
-void Class::addAttribut(Attribut& attr){
+void Class::addAttribut(Attribut& attr, bool isStatic){
 	
 }
-void Class::addMethod(Method& m){
+void Class::addMethod(Method& m, bool isStatic){
 	
 }
 bool Class::hasAttribute(const string& name){
