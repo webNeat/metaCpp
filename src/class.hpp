@@ -17,23 +17,15 @@ public:
 	Class(Class&);
 	Class& operator=(const Class&);
 	~Class();
-	void addAttribut(Attribut& attr, bool isStatic = false );
-	void addMethod(Method& m , bool isStatic = false );
-	bool hasAttribute(const string& name );
-	bool getAttribute(const string& name );
-	bool hasMethodWithName(const string& name );
-	const Method& getMethodByName(const string& name );
-	vector<Attribut> getAttributesByType(const string& type );
-	vector<Method> getMethodsByType(const string& type );
-	vector<Method> getMethodsByArgs(vector<string>& args );
-	vector<Method> getConstructors();
 	const string& getName() const;
-	void setName(const string& name );
-	const MetaClass& getMeta() const;
+	void addAttribut(Attribut& attr);
+	void addStaticAttribut(Attribut& attr);
+	void addMethod(Method& m);
+	void addStaticMethod(Method& m);
 	const vector<Attribut>& getAttributs() const;
-	void setAttributs(const vector<Attribut>& attributs );
+	const vector<Attribut>& getStaticAttributs() const;
 	const vector<Method>& getMethods() const;
-	void setMethods(const vector<Method>& methods );
+	const vector<Method>& getStaticMethods() const;
 };
 
 #endif
