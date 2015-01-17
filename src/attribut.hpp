@@ -10,7 +10,7 @@ private:
 	string type_;
 public:
 	Attribut(const string&, const string&);
-	Attribut(Attribut&);
+	Attribut(const Attribut&);
 	Attribut& operator=(const Attribut&);
 	~Attribut();
 	const string& getName() const;

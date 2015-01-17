@@ -1,6 +1,6 @@
 #include "method.hpp"
 
-Method::Method(Method& i){
+Method::Method(const Method& i){
 	name_ = i.getName();
 	type_ = i.getType();
 	args_ = i.getArgs();

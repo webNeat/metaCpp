@@ -13,7 +13,7 @@ private:
 public:
 	MetaClass();
 	MetaClass(const vector<Attribut>& attributs, const vector<Method>& methods);
-	MetaClass(MetaClass&);
+	MetaClass(const MetaClass&);
 	MetaClass& operator=(const MetaClass&);
 	~MetaClass();
 	void addAttribut(const Attribut& attr );

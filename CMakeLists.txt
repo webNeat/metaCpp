@@ -5,10 +5,16 @@ project( metaCpp )
 
 set( src_files
    src/attribut.cpp
+   src/method.cpp
+   src/class.cpp
+   src/meta_class.cpp
 )
 
 set( src_headers
    src/attribut.hpp
+   src/method.hpp
+   src/class.hpp
+   src/meta_class.hpp
 )
 
 set( test_files 

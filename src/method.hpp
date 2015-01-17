@@ -11,7 +11,7 @@ private:
 	string type_;
 	vector<string> args_;
 public:
-	Method(Method&);
+	Method(const Method&);
 	Method& operator=(const Method&);
 	~Method();
 	Method(const string& name , const string& type );
