@@ -11,12 +11,11 @@ private:
 	string type_;
 	vector<string> args_;
 public:
-	Method();
 	Method(Method&);
 	Method& operator=(const Method&);
 	~Method();
 	Method(const string& name , const string& type );
-	void addArg(string& arg ) const;
+	void addArg(const string& arg );
 	const string& getName() const;
 	void setName(const string& name );
 	const string& getType() const;

@@ -9,7 +9,6 @@ private:
 	string name_;
 	string type_;
 public:
-	Attribut();
 	Attribut(const string&, const string&);
 	Attribut(Attribut&);
 	Attribut& operator=(const Attribut&);

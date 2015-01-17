@@ -13,7 +13,6 @@ private:
 	vector<Attribut> attributs_;
 	vector<Method> methods_;
 public:
-	Class();
 	Class(const string& name, const MetaClass& meta, const vector<Attribut>& attributs, const vector<Method>& methods);
 	Class(Class&);
 	Class& operator=(const Class&);

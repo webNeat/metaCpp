@@ -13,10 +13,10 @@ MetaClass& MetaClass::operator=(const MetaClass& i){
 MetaClass::~MetaClass(){
 
 }
-void MetaClass::addAttribut(Attribut& attr){
+void MetaClass::addAttribut(const Attribut& attr){
 	
 }
-void MetaClass::addMethod(Method& m){
+void MetaClass::addMethod(const Method& m){
 	
 }
 const vector<Attribut>& MetaClass::getAttributs() const {

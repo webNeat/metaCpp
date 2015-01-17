@@ -1,6 +1,5 @@
 #include "method.hpp"
 
-Method::Method(){}
 Method::Method(Method& i){
 	name_ = i.getName();
 	type_ = i.getType();
@@ -17,7 +16,7 @@ Method::Method(const string& name, const string& type){
 	name_ = name;
 	type_ = type;
 }
-void Method::addArg(string& arg) const {
+void Method::addArg(const string& arg) {
 	args_.push_back(arg);
 }
 const string& Method::getName() const {

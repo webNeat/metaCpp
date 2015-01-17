@@ -1,8 +1,5 @@
 #include "class.hpp"
 
-Class::Class(){
-
-}
 Class::Class(const string& name) : name_(name) {}
 Class::Class(Class& i) : name_(i.name_), meta_(i.meta_), attributs_(i.attributs_), methods_(i.methods_){}
 Class& Class::operator=(const Class& i){ 

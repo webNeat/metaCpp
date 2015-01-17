@@ -1,6 +1,5 @@
 #include "attribut.hpp"
 
-Attribut::Attribut() {}
 Attribut::Attribut(const string& type, const string& name) : type_(type), name_(name) {}
 Attribut::Attribut(Attribut& i) : type_(i.getType()), name_(i.getName()) {}
 Attribut& Attribut::operator=(const Attribut& i){
