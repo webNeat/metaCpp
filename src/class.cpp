@@ -9,9 +9,7 @@ Class& Class::operator=(const Class& i){
 	methods_ = i.methods_;
 	return *this;
 }
-Class::~Class(){
-
-}
+Class::~Class(){}
 const string& Class::getName() const {
 	return name_;
 }

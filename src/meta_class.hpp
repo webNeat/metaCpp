@@ -19,9 +19,7 @@ public:
 	void addAttribut(const Attribut& attr );
 	void addMethod(const Method& m );
 	const vector<Attribut>& getAttributs() const;
-	void setAttributs(const vector<Attribut>& attributs );
 	const vector<Method>& getMethods() const;
-	void setMethods(const vector<Method>& methods );
 };
 
 #endif
